@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "ShortBaby";
+  src: url(multimedia/ShortBaby-Mg2w.ttf);
+}
+body{
+  background-color: #f5f5f5;
+  font-family: "Sedan SC", serif;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 20px;
+  gap: 20px;
+}
+.left{
+  background-color: black;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 20px;
+  border-radius: 30px;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.profile img{
+  width: 60%;
+  height: 75%;
+  border-radius: 50%;
+}
+.profile p{
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.nav{
+  display: flex;
+  padding: 10px;
+  color: white;
+  margin-left: 20px;
+}
+.nav>a{
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+
+}
+.nav :hover{
+  color: gold;
+}
+.nav>a:hover{
+color: lightgray;
+}
+.right{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header>h1{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: 700;
+}
+header>input{
+  margin-right: 5%;
+  margin-top: 20px;
+  width: 200px;
+  height: 25px;
+  border-radius: 10px;
+  border: 0px solid white;
+}
+header>input:focus{
+  outline-color: lightgreen;
+}
+#board{
+  width: 85%;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 50px;
+  padding: 10px;
+}
+#board img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+article h2{
+  text-align: center;
+  text-decoration: underline;
+}
+article h2:hover{
+transition: 1s;
+font-size: 32px;
+  text-decoration-color: goldenrod;
+}
+.card-con{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family:ShortBaby;
+}
+.card{
+  height: 100px;
+  width: 180px;
+  border-radius: 20px;
+}
+.card1{
+  background-color: lightskyblue;
+}
+.card2{
+  background-color: rgb(135, 250, 213);
+}
+.card3{
+  background-color: rgb(250, 135, 227);
+}
+.card4{
+  background-color: rgb(250, 187, 135);
+}
+.card1>i{
+  margin-left: 150px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.cardHead{
+  margin: 0px;
+  margin-left:10px ;
+  font-size: 18px;
+}
+.cardData{
+  margin-top: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.card2>i{
+  margin-left: 150px;
+  margin-top: 10px;
+  font-size: 18px;
+}.card3>i{
+  margin-left: 150px;
+  margin-top: 10px;
+  font-size: 18px;
+}.card4>i{
+  margin-left: 150px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.card:hover{
+  background: radial-gradient(circle,rgba(238,174,202,1) 0%,rgba(148,187,233,1) 100%);
+}
+#users{
+margin-top: 50px;
+
+}
+
+table{
+  width: 95%;
+  border-collapse: collapse;
+  border-radius: 20px;
+  background-color: white;
+}
+table th, table td{
+  padding: 15px 100px;
+  text-align: left;
+}
+table th{
+  background-color: #a39696;
+  font-weight: 600;
+}
+table tbody tr:nth-child(even){
+  background-color: #e1e1e1;
+}
+table tbody tr:hover{
+  background-color: #b6b6b6;
+}
+#schedule{
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-top: 80px;
+  overflow-y: scroll;
+  max-height: 400px;
+  margin-left: 70px;
+}
+.schedule-head{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.schedule-head>h3{
+margin-left: 20px;
+font-weight: 600 ;
+font-size: 25px;
+margin-top: 0;
+padding-top: 0;
+}
+.schedule-head p{
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
+  
+}
+.meets{
+  margin-top: 0%;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+.head{
+  font-size: 20px;
+  font-weight: 600;
+}
+.details{
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+.schedule-details div:nth-child(odd){
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-left: 3px solid #9bdd7c;
+}
+.schedule-details div:nth-child(even){
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-left: 3px solid #7cc3dd;
+}
+.contact-inner{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: 20px;  
+}
+iframe{
+  border-radius: 30px;
+}
+.feeback-form{
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+.feeback-form h2{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.feeback-form input[type="text"],
+.feeback-form input[type="email"],
+.feeback-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.feeback-form textarea{
+  resize: vertical;
+  height: 150px;
+}
+.feeback-form input[type="submit"]{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9bdd7c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+footer div{
+  margin-bottom: 10px;
+}
+footer a{
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+}
+footer a:hover{
+color: lightgrey;
+}
+footer a:first-child{
+  margin-left: 0;
+}
+footer a:last-child{
+  margin-right: 0;
+}
